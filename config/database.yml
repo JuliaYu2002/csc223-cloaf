@@ -4,7 +4,7 @@ default: &default
   collation: utf8mb4_unicode_520_ci
   reconnect: false
   pool: 5
-  socket: /tmp/mysql.sock
+  socket: <%= ENV['MYSQL_SOCKET'] || '' %>
 
 development:
   <<: *default
