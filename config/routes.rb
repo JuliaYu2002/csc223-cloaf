@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  root to: "stations#index"
+  root to: "home#index"
+  get 'home/howitworks'
+  get 'home/map'
+  get 'home/pricing'
+  get 'home/about'
+  get 'home/help'
+  get 'home/login'
+  get 'home/privacy'
+  get 'home/terms_of_use'
 end
