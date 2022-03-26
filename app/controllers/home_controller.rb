@@ -26,5 +26,8 @@ class HomeController < ApplicationController
     
     def terms_of_use
     end
+    
+    def register
+    end
   
   end

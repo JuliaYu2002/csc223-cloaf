@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'home/login'
   get 'home/privacy'
   get 'home/terms_of_use'
+  get 'home/register'
 end
