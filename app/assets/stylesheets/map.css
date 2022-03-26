@@ -2,7 +2,11 @@
 /*           Map Page CSS           */
 /************************************/
 
-.map-text {
+.map__container {
+    height: 500px;
+}
+
+.map__text {
     margin: auto;
     width: 50%;
 }
