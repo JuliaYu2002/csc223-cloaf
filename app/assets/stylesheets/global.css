@@ -33,3 +33,8 @@ body {
   color: var(--black-color);
   background: var(--white-color);
 }
+
+p {
+  font-family: cursive;
+  color: var(--bs-purple);
+}
