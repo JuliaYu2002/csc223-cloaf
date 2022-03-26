@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  username: MyString
+  password: MyString
+  total_rides: 
+  registration_date: 2022-03-25 21:09:17
+
+two:
+  email: MyString
+  username: MyString
+  password: MyString
+  total_rides: 
+  registration_date: 2022-03-25 21:09:17
