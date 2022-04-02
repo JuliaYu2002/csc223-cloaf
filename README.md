@@ -2,6 +2,7 @@
 
 ## Updates to the Gemfile include:
 The addition of Leaflet-rails and Devise
+
 (run 'bundle install' to get any missing gems)
 
 ## Populating the database
