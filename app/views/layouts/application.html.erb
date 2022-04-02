@@ -19,14 +19,14 @@
   <body>
     <div id="site-container" class="flexbox vertical stretch flex-1">
       <div class="flexbox vertical center">
-        <nav role="navigation" aria-label="navigation bar">
-          <%= link_to 'Home', root_path %>
-          <%= link_to 'How It Works', home_howitworks_path %>
-          <%= link_to 'Map', home_map_path %>
-          <%= link_to 'Pricing', home_pricing_path %>
-          <%= link_to 'About Us', home_about_path %>
-          <%= link_to 'Help', home_help_path %>
-          <%= link_to 'Login/ My Account', home_login_path %>
+        <nav role="navigation" id="mainNav" class="navbar container" aria-label="navigation bar">
+          <%= link_to 'Home', root_path, class: "nav-link" %>
+          <%= link_to 'How It Works', home_howitworks_path, class: "nav-link" %>
+          <%= link_to 'Map', home_map_path, class: "nav-link" %>
+          <%= link_to 'Pricing', home_pricing_path, class: "nav-link" %>
+          <%= link_to 'About Us', home_about_path, class: "nav-link" %>
+          <%= link_to 'Help', home_help_path, class: "nav-link" %>
+          <%= link_to 'Login/ My Account', home_login_path, class: "nav-link" %>
         </nav>
 
         <%= yield %>
