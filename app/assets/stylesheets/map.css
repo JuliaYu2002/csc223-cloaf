@@ -10,3 +10,7 @@
     margin: auto;
     width: 50%;
 }
+
+#map {
+    height: 180px;
+}
