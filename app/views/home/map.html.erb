@@ -1,1 +1,64 @@
-<p> This is the Map page </p>
+<% content_for :title, "Map | ValetBike" %>
+
+<div class="page-section flexbox vertical stretch">
+    <div class="section-inner flexbox vertical stretch">
+
+        <h1>ValetBike Map Page</h1>
+        <!-- Title will be removed later? -->
+
+        <div class="map__container flexbox horizontal stretch" id="map">
+            <!-- Made map__container class in case it needs adjustments -->
+            <%# fix line 14 %>
+            <%# <script type="text/javascript" src="../assets/javascripts/map.js"></script> %>
+
+            <!-- img src="../assets/placeholder-map-pin.png" -->
+
+            <script> <!--  script tag from: https://github.com/CJParkNW/valetbike/commit/f21be0e9c3e0b2a8e1dedffefbc207081902027b-->
+            var map = L.map('map').setView([42.32, -72.65], 13);
+          
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+          
+            L.marker([42.32, -72.65]).addTo(map)
+              .bindPopup('Welcome to Northampton! We have Valetbike here!')
+              .openPopup();
+            </script>
+                
+            </div>
+
+    </div>
+
+    <div class="section-inner flexbox vertical stretch">
+        <div class ="location-info__container flexbox vertical stretch">
+            <!-- Made location-info__container class in case it needs adjustments (scroll-bar, visibility, etc.) -->
+            <h2> Location Info </h2>
+            <!-- Rent page should auto-populate with location chosen -->
+            <ol type="1" class="location-info__text">
+                <li>
+                    Station 1:
+                    <ul>
+                        Bikes available: #
+                    </ul>
+                    <ul>
+                        <div role="button" type="button" class="button">
+                            <%= link_to 'Rent', home_rent_path %>
+                        </div>
+                    </ul>
+                </li>
+                <li>Station 2
+                    <ul>
+                    Bikes available: #
+                    </ul>
+                    <ul>
+                        <div role="button" type="button" class="button">
+                            <%= link_to 'Rent', home_rent_path %>
+                        </div>
+                    </ul>
+                </li>
+            </ol>
+            <!-- Made location-info__text class in case it needs adjustments -->
+        </div>
+    </div>
+
+</div>
