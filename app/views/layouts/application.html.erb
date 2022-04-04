@@ -19,6 +19,7 @@
   <body>
     <div id="site-container" class="flexbox vertical stretch flex-1">
       <div class="flexbox vertical center">
+
         <nav role="navigation" id="mainNav" class="navbar container" aria-label="navigation bar">
           <%= link_to 'Home', root_path, class: "nav-link" %>
           <%= link_to 'How It Works', home_howitworks_path, class: "nav-link" %>
@@ -27,6 +28,13 @@
           <%= link_to 'About Us', home_about_path, class: "nav-link" %>
           <%= link_to 'Help', home_help_path, class: "nav-link" %>
           <%= link_to 'Login/ My Account', home_login_path, class: "nav-link" %>
+          <% if user_signed_in? %>
+                    <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+          <% else %>
+                    <%= link_to 'Sign Up', new_user_registration_path %>
+                    <%= link_to 'Log In', new_user_session_path %>
+          <% end %>
+
         </nav>
 
         <%= yield %>

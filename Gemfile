@@ -70,7 +70,7 @@ gem 'dotenv-rails'
 gem 'leaflet-rails'
 
 # Suggested Potentially Useful Gems
-# gem 'devise'
+gem 'devise'
 # gem 'httparty'
 # gem 'paperclip
 # gem 'uniquify'
