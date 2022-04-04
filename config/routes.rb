@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'home/pricing'
   get 'home/about'
   get 'home/help'
-  get 'home/login'
   get 'home/privacy'
   get 'home/terms_of_use'
+  get 'home/my_account'
   get 'home/rent'
 end
