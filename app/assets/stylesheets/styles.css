@@ -11298,9 +11298,10 @@ body {
   height: 100%;
 }
 
-.page-section {
+/* HOME-PAGE ADJUSTMENT: NEEDS REVIEW FOR USE */
+/* .page-section {
   padding: 8rem 0;
-}
+} */
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;

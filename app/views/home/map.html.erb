@@ -1,9 +1,9 @@
+<% content_for :title, "Map | ValetBike" %>
+
 <div class="page-section flexbox vertical stretch">
     <div class="section-inner flexbox vertical stretch">
 
-        <div class="section-title">
-            <h1>ValetBike Map Page</h1>
-        </div>
+        <h1>ValetBike Map Page</h1>
         <!-- Title will be removed later? -->
 
         <div class="map__container flexbox horizontal stretch" id="map">
@@ -26,15 +26,27 @@
         <div class ="location-info__container flexbox vertical stretch">
             <!-- Made location-info__container class in case it needs adjustments (scroll-bar, visibility, etc.) -->
             <h2> Location Info </h2>
+            <!-- Rent page should auto-populate with location chosen -->
             <ol type="1" class="location-info__text">
-                <li>Station 1:
+                <li>
+                    Station 1:
                     <ul>
-                    Bikes available: #
+                        Bikes available: #
+                    </ul>
+                    <ul>
+                        <div role="button" type="button" class="button">
+                            <%= link_to 'Rent', home_rent_path %>
+                        </div>
                     </ul>
                 </li>
                 <li>Station 2
                     <ul>
                     Bikes available: #
+                    </ul>
+                    <ul>
+                        <div role="button" type="button" class="button">
+                            <%= link_to 'Rent', home_rent_path %>
+                        </div>
                     </ul>
                 </li>
             </ol>
